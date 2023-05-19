@@ -1,0 +1,65 @@
+{
+  "page": {
+    "key": "Como trabalhamos",
+    "title": "Como trabalhamos | indays.app",
+    "description": "Entenda como nossa consultoria em transformação e inovação digital funciona, e como isso gera resultados incríveis.",
+    "keywords": "processo de transformação e inovação digital, consultoria em transformação e inovação digital"
+  },
+  "title": "Como nós trabalhamos?",
+  "subtitle": "Entenda como nossa consultoria em transformação e inovação digital funciona, e como nossa cultura ágil gera resultados incríveis.",
+  "consulting": {
+    "paragraphs": [
+      "Nosso processo inovativo se inicia em uma consultoria que busca diagnosticar problemas e dificuldades que podem ser resolvidos com o auxilio de tecnologia.",
+      "Nosso know-how nos possibilita enxergar pontos cegos que em muitos casos nem se quer foram notados. Esta etapa se desdobra em 4 passos:"
+    ],
+    "processTimeline": [
+      {
+        "title": "1. Operacional",
+        "description": "Antes de tudo fazemos um levantamento e mapeamento de todo o operacional da sua empresa para termos clareza, nos mínimos detalhes, em como ela funciona."
+      },
+      {
+        "title": "2. Entrevistas",
+        "description": "Após ter claro cada peça fundamental que faz sua empresa \"girar\", entrevistamos líderes e funcionários para gerar insumos para nosso mapeamento de inovação."
+      },
+      {
+        "title": "3. Mapeamento",
+        "description": "Com todos os insumos em mãos, iniciamos nosso processo criativo para elaborar soluções para todos os problemas enxergados pelos consultores e apontados pelas equipes operacionais."
+      },
+      {
+        "title": "4. Diagnóstico",
+        "description": "No término do processo criativo, entregamos um diagnóstico completo de todas as dificuldades e problemas enxergados bem como soluções para cada um desses pontos."
+      }
+    ]
+  },
+  "development": {
+    "paragraphs": [
+      "É comum que soluções específicas necessitem de um software customizado para que o problema seja totalmente solucionado, e para esses casos temos um equipe de desenvolvimento de alta performance de prontidão.",
+      "<strong>Nós seguimos estratégias de desenvolvimento customer-centered baseadas em uma Cultura Ágil</strong> que foca em entregar soluções excelentes e de grande valor para seu negócio.",
+      "Para aumentar a velocidade do processo de desenvolvimento, nós temos blocos de código e componentes de design pré-montados que foram construídos para serem consistentes, úteis, genéricos e customizáveis.",
+      "Veja, neste breve resumo, como nosso <strong>processo de desenvolvimento ágil</strong> funciona:"
+    ],
+    "squad": {
+      "description": "Todas as soluções desenvolvidas por nós são feitas através de squads: <strong>times multidisciplinares de alto desempenho focados na entrega contínua de <em>verdadeiro valor</em></strong>, trabalhando em um ambiente de colaboração com nossos parceiros (é assim que encaramos nossos clientes) usando alguns fundamentos dos frameworks Scrum e Shape Up prezando por qualidade e adaptabilidade.",
+      "caption": "Tamanho médio de uma squad",
+      "iconAlt": "Silhueta humana"
+    },
+    "processTimeline": [
+      {
+        "title": "1. Compreender",
+        "description": "O processo inicia garantindo que todos os objetivos estratégicos de nosso parceiro serão alcançados discutindo todos os detalhes sobre a solução necessária em um workshop Lean Inception remoto ou presencial."
+      },
+      {
+        "title": "2. Design",
+        "description": "Após coletar todas as informações necessárias, nós começamos a desenhar a solução utilizando alguma ferramenta de prototipagem (como o Figma) para validar as ideias e objetivos de nosso parceiro, além disso, todo o design criado nesse passo do processo é útil para o time de desenvolvimento nos próximos passos."
+      },
+      {
+        "title": "3. Desenvolver",
+        "description": "Quando qualquer fragmento de design da solução está validada pelo parceiro, nós iniciamos a codificação mantendo em mente que o objetivo é entregar valor verdadeiro com excelência. Para atingir este objetivo, nós seguimos padrões de desenvolvimento que garantem que nossa solução está crescendo de maneira saudável."
+      },
+      {
+        "title": "4. Aprimorar",
+        "description": "Os passos “design → desenvolver” vão sendo repetidos enquanto a aplicação cresce até que seja finalizada."
+      }
+    ]
+  }
+}

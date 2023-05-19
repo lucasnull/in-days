@@ -1,0 +1,35 @@
+@import "tokens";
+@import "mixins";
+
+.top {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  &::before {
+    width: 100%;
+    z-index: -2;
+    content: "";
+    height: 100%;
+    display: block;
+    position: absolute;
+    background-size: cover;
+    background-position: 45%;
+    background-repeat: no-repeat;
+    background-image: url("/assets/header-background.jpg");
+  }
+
+  &::after {
+    top: 0;
+    left: 0;
+    opacity: 1;
+    width: 100%;
+    content: "";
+    z-index: -1;
+    height: 100%;
+    display: block;
+    position: absolute;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 20%, rgba(255, 255, 255, 0.4) 100%);
+  }
+}

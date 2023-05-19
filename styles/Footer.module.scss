@@ -1,0 +1,134 @@
+@import "tokens";
+@import "mixins";
+
+.footer {
+  @include flex-centered-content;
+  color: $white;
+  background: $black;
+  margin-top: $spacing-sm;
+
+  @include desktop {
+    margin-top: $spacing-md;
+  }
+
+  :global {
+    .footer--content-container {
+      width: 100%;
+      max-width: $max-width;
+    }
+
+    .footer--about-container {
+      p.title {
+        font-weight: bold;
+        margin-bottom: $spacing-xs;
+
+        span {
+          color: $green;
+        }
+
+        // mobile only attributes
+        font-size: $font-sm;
+
+        // desktop override attributes
+        @include desktop {
+          font-size: $font-md;
+        }
+      }
+
+      p {
+        text-align: justify;
+        margin-bottom: $spacing-xs;
+        font-size: $font-xs;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        @include desktop {
+          font-size: $font-sm;
+        }
+      }
+    }
+
+    .footer--external-links {
+      list-style-type: none;
+      font-size: $font-xxs;
+
+      // mobile-only attributes
+      margin-top: $spacing-sm;
+
+      // desktop override attributes
+      @include desktop {
+        margin-top: $spacing-md;
+      }
+
+      li {
+        // mobile-only attributes
+        margin-bottom: $spacing-xs;
+
+        @include desktop {
+          margin-bottom: 0.5rem;
+        }
+
+        a {
+          color: $white;
+          font-weight: bold;
+          @include simple-link;
+        }
+      }
+    }
+
+    .footer--social-media-links {
+      display: flex;
+      flex-direction: row;
+      list-style-type: none;
+      margin-top: $spacing-sm;
+
+      @include desktop {
+        margin-top: $spacing-xs;
+      }
+
+      li {
+        margin-right: $spacing-xs;
+
+        a {
+          top: 0;
+          position: relative;
+          transition: top 0.15s;
+
+          img {
+            width: 2.4rem;
+            height: 2.4rem;
+            object-fit: fill;
+          }
+
+          &:hover {
+            top: -2px;
+          }
+        }
+      }
+    }
+
+    .footer--languages-links {
+      display: flex;
+      flex-direction: row;
+      list-style-type: none;
+      margin-top: $spacing-sm;
+
+      @include desktop {
+        margin-top: $spacing-xs;
+      }
+
+      li {
+        margin-right: $spacing-sm;
+
+        a {
+          color: $white;
+          font-weight: bold;
+          @include simple-link;
+          font-size: $font-xxs;
+        }
+      }
+    }
+  }
+}

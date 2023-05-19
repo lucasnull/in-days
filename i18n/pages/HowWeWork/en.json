@@ -1,0 +1,65 @@
+{
+  "page": {
+    "key": "How we work",
+    "title": "How we work | indays.app",
+    "description": "Understand how our custom mobile development works, and how our agile development culture gives us incridible results.",
+    "keywords": "agile development, agile culture, agile development process"
+  },
+  "title": "How we work?",
+  "subtitle": "Understand how our custom mobile development works, and how our agile development culture gives us incridible results.",
+  "consulting": {
+    "paragraphs": [
+      "Our innovative process begins with a consultancy that seeks to diagnose problems and difficulties that can be solved with the help of technology.",
+      "Our know-how allows us to see blind spots that in many cases were not even noticed. This step unfolds in 4 steps:"
+    ],
+    "processTimeline": [
+      {
+        "title": "1. Operational",
+        "description": "First of all, we carry out a survey and mapping of your company's entire operations so that we are clear, down to the smallest detail, on how it works."
+      },
+      {
+        "title": "2. Interviews",
+        "description": "After clarifying each fundamental piece that makes your company \"turn\", we interview leaders and employees to generate inputs for our innovation mapping."
+      },
+      {
+        "title": "3. Mapping",
+        "description": "With all the inputs in hand, we started our creative process to come up with solutions for all the problems seen by the consultants and pointed out by the operational teams."
+      },
+      {
+        "title": "4. Diagnosis",
+        "description": "At the end of the creative process, we deliver a complete diagnosis of all the difficulties and problems seen, as well as solutions for each of these points."
+      }
+    ]
+  },
+  "development": {
+    "paragraphs": [
+      "It is common for specific solutions to require customized software so that the problem is completely solved, and for these cases we have a high-performance development team on standby.",
+      "<strong>We follow some customer-centered development strategies based in Agile Culture</strong> which aims to delivery excellent solutions generating value to their business.",
+      "To speed up the development process, we have premade code blocks and design components that were built to be consistent, useful, generic and customizable.",
+      "Take a look at this brief summary of how our <strong>agile development process</strong> works:"
+    ],
+    "squad": {
+      "description": "All solutions developed by us are made by squads: <strong>high performance multidisciplinary teams focused on continuous delivery of <em>true value</em></strong>, working in a collaborative environment with our clients using some Scrum and Shape Up framework fundamentals cherishing for quality and adaptability.",
+      "caption": "Average squad size",
+      "iconAlt": "Human silhouette"
+    },
+    "processTimeline": [
+      {
+        "title": "1. Understand",
+        "description": "The process starts by ensuring that all of your strategic goals will be met discussing all details about the needed solution in an in-house or remote Lean Inception workshop."
+      },
+      {
+        "title": "2. Design",
+        "description": "After gathering all required information, we start to design the solution using a prototyping tool (like Figma) to validate our partner’s ideas and goals, furthermore, all design created in this step is useful for the squad in the next steps."
+      },
+      {
+        "title": "3. Develop",
+        "description": "When any design fragment of the solution is validated by the partner, we start to code it keeping in mind that our goal is to delivery true value with excellence. To achieve this, we follow our coding standards that ensure the solution is growing up healthy."
+      },
+      {
+        "title": "4. Improve",
+        "description": "The “design → develop” steps are being repeated while the application is growing up until it is done."
+      }
+    ]
+  }
+}

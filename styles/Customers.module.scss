@@ -1,0 +1,101 @@
+@import "tokens";
+@import "mixins";
+
+.customers {
+  @include flex-centered-content;
+
+  :global {
+    .customers--content-container {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      max-width: $max-width;
+
+      h2 {
+        max-width: 450px;
+        font-size: $font-sm;
+        margin-bottom: $spacing-xs;
+
+        @include tablet {
+          font-size: $font-md;
+        }
+      }
+
+      p {
+        max-width: 920px;
+        font-size: $font-xs;
+      }
+    }
+
+    .customers--list {
+      position: relative;
+      margin: 0 -$spacing-sm;
+      margin-top: $spacing-sm;
+
+      &::after,
+      &::before {
+        top: 0;
+        z-index: 1;
+        content: "";
+        height: 100%;
+        position: absolute;
+        width: calc($spacing-sm * 2);
+      }
+
+      &::before {
+        left: 0;
+        background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+      }
+
+      &::after {
+        right: 0;
+        background: linear-gradient(-90deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+      }
+
+      .customer-list--container {
+        width: 100%;
+        overflow-x: scroll;
+        padding: $spacing-xs 0;
+
+        &::-webkit-scrollbar {
+          display: none;
+        }
+
+        @include tablet {
+          margin-top: $spacing-md;
+        }
+
+        @include desktop {
+          margin-top: $spacing-lg;
+        }
+
+        ul {
+          width: 100%;
+          display: grid;
+          list-style: none;
+          grid-column-gap: $spacing-sm;
+          padding: 0 $spacing-sm;
+          grid-template-columns: repeat(6, 1fr);
+
+          @include tablet {
+            grid-column-gap: $spacing-md;
+          }
+
+          @include desktop {
+            grid-column-gap: $spacing-lg;
+          }
+
+          li {
+            width: 100%;
+            height: 50px;
+            position: relative;
+
+            &:last-child {
+              margin-right: $spacing-sm;
+            }
+          }
+        }
+      }
+    }
+  }
+}

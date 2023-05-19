@@ -1,0 +1,44 @@
+{
+  "page": {
+    "key": "Página inicial",
+    "title": "Consultoria em Transformação Digital | indays.app",
+    "description": "Somos uma consultoria com foco na transformação e inovação digital que te ajuda a desenvolver estratégias de negócio e digitalização.",
+    "keywords": "inovação digital, transformação digital, consultoria"
+  },
+  "general": {
+    "needHelp": "Precisa de ajuda?"
+  },
+  "blocks": {
+    "headline": {
+      "title": "Somos uma consultoria com foco na inovação e transformação digital que te ajuda a desenvolver <strong><u>estratégias de negócio e digitalização</u></strong>.",
+      "action": "Eu quero",
+      "words": ["crescer", "inovar", "transformar", "lucrar", "digitalizar"],
+      "cards": {
+        "first": "<span><strong>otimize</strong></span> os seus processos mais importantes",
+        "second": "<span>melhore a experiência</span> de seus clientes",
+        "third": "<span>aumente seus lucros</span> em até 10 vezes",
+        "fourth": "<span>acelere</span> o crescimento do seu negócio"
+      }
+    },
+    "customers": {
+      "title": "Você acredita que a <strong><u>tecnologia</u></strong> pode alavancar a sua empresa?",
+      "subtitle": "A indays.app é formado por desenvolvedores da Simbiose Ventures com foco em resolução de problemas com tecnologia. A Simbiose Ventures já transformou essas empresas:"
+    },
+    "appeal": {
+      "title": "Consultoria",
+      "description": "Todos acreditam que a transformação digital é importante para o sucesso futuro, porém apenas <u>4% das empresas estão preparadas</u> para implementar as ações necessárias e <b>obter um lucro de 3 a 10 vezes maior</b> pois nem sequer enxergam os gaps e problemas relacionados à tecnologia, ou a falta dela, dentro de seu próprio negócio. <br /><br /> Somos uma empresa com expertise em consultoria tecnológica, onde desenvolvemos estratégias de negócio e inovação digital com ênfase em soluções personalizadas.<br /><br /> Estamos prontos para realizar o mapeamento do operacional da sua empresa para que ela seja digitalmente inovada pelo melhor caminho possível sendo direcionada para ganho de uma lucratividade exponencial.",
+      "action": "Quero minha consultoria"
+    },
+    "solutions": {
+      "title": "Soluções",
+      "subtitle": "Somos um ecossistema de tecnologia e inovação que integra conhecimento humano, visão estratégica e flexibilidade para potencializar o futuro das empresas.",
+      "items": [
+        { "label": "Consultoria de estratégia digital", "icon": "computer" },
+        { "label": "Diagnóstico de tecnologia e seus desafios", "icon": "file" },
+        { "label": "Definição de ferramentas e plataformas", "icon": "wrench" },
+        { "label": "Definição de oportunidades omnichannel", "icon": "arrows" },
+        { "label": "Otimização de processos importantes", "icon": "fast-forward" }
+      ]
+    }
+  }
+}

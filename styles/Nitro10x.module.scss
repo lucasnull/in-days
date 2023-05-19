@@ -1,0 +1,212 @@
+@import "tokens";
+@import "mixins";
+
+.nitro10x {
+  @include flex-centered-content;
+
+  color: $white;
+  aspect-ratio: 4 / 3;
+  background: $black;
+
+  @include tablet {
+    aspect-ratio: unset;
+  }
+
+  :global {
+    .nitro10x--content-container {
+      width: 100%;
+      display: flex;
+      max-width: $max-width;
+      flex-direction: column;
+
+      h1 {
+        font-weight: normal;
+        font-size: $font-md;
+        text-transform: uppercase;
+        text-align: center;
+
+        @include desktop {
+          font-size: $font-lg;
+        }
+
+        span {
+          font-weight: bold;
+          color: $nitro-green;
+          text-shadow: $nitro-green 0px 0px 20px;
+
+          &.s10x {
+            font-style: italic;
+            margin-left: -3px;
+            margin-right: 2px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.nitro10xFadeOut {
+  @include flex-centered-content;
+
+  width: 100%;
+  align-items: flex-start;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 1) 10%, rgba(0, 0, 0, 1) 60%);
+
+  :global {
+    .fadeout--content-container {
+      display: flex;
+      max-width: 100%;
+      margin-top: -50px;
+      flex-direction: column;
+
+      @include desktop {
+        max-width: 99rem;
+      }
+
+      hr {
+        opacity: 0.1;
+        background: white;
+        align-self: center;
+      }
+
+      h1 {
+        color: white;
+        font-weight: normal;
+        font-size: $font-md;
+
+        @include desktop {
+          font-size: $font-lg;
+        }
+
+        span {
+          color: $nitro-green;
+        }
+      }
+
+      h2 {
+        color: white;
+        font-weight: normal;
+        font-size: $font-sm;
+        margin-top: $spacing-sm;
+
+        @include desktop {
+          font-size: $font-md;
+        }
+      }
+    }
+
+    .fadeout--contact {
+      margin-top: $spacing-sm;
+
+      .wpp-link {
+        width: auto;
+        display: inline-flex;
+
+        a {
+          display: flex;
+          height: 4.8rem;
+          align-items: center;
+          flex-direction: row;
+          border-radius: 4.8rem;
+          padding: 0 $spacing-sm;
+          background: $nitro-green;
+          box-shadow: 0px 0px 30px 0px rgba(22, 255, 108, 0.5);
+
+          color: $black;
+          font-weight: bold;
+          font-size: $font-sm;
+          text-decoration: none;
+
+          img {
+            margin-right: $spacing-xs;
+          }
+        }
+      }
+
+      span {
+        color: $light-gray;
+        display: block;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: $font-xs;
+        margin-top: $spacing-xs;
+        margin-left: $spacing-sm;
+        text-decoration: underline;
+      }
+    }
+
+    .fadeout--cards {
+      height: calc(250px + ($spacing-sm * 2));
+      overflow-y: auto;
+      position: relative;
+      padding: $spacing-sm 0;
+      margin-top: $spacing-sm;
+      margin-left: -$spacing-sm;
+      margin-right: -$spacing-sm;
+
+      .cards--inner {
+        display: flex;
+        gap: $spacing-sm;
+        position: absolute;
+        padding: 0 $spacing-sm;
+
+        @include desktop {
+          position: unset;
+        }
+      }
+
+      .card {
+        flex: 1;
+        width: 20rem;
+        height: 25rem;
+        display: flex;
+        position: relative;
+
+        @include desktop {
+          width: unset;
+        }
+
+        .card-container {
+          right: 0;
+          z-index: 2;
+          display: flex;
+          height: calc(100% - 1rem);
+          position: absolute;
+          background: $black;
+          border-radius: 2rem;
+          align-items: center;
+          padding: $spacing-sm;
+          flex-direction: column;
+          justify-content: center;
+          width: calc(100% - 1rem);
+
+          h3 {
+            display: flex;
+            color: white;
+            min-height: 5.4rem;
+            text-align: center;
+            font-size: $font-sm;
+            align-items: center;
+            margin-top: $spacing-sm;
+            justify-content: center;
+          }
+        }
+
+        &::before {
+          top: 1rem;
+          left: 0rem;
+          z-index: 1;
+          content: "";
+          display: block;
+          position: absolute;
+          border-radius: 2rem;
+          background: $nitro-green;
+          border: 1px solid $nitro-green;
+          width: calc(100% - 1rem);
+          height: calc(100% - 1rem);
+          box-shadow: 0px 0px 30px 0px rgba(22, 255, 108, 0.3);
+        }
+      }
+    }
+  }
+}

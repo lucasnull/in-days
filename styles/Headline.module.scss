@@ -1,0 +1,286 @@
+@import "tokens";
+@import "mixins";
+
+.headline {
+  @include flex-centered-content;
+
+  :global {
+    .headline--content-container {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      max-width: $max-width;
+
+      @include desktop {
+        flex-direction: row;
+      }
+
+      .button--animation {
+        margin-left: 0.5rem;
+
+        .carret {
+          & :local {
+            animation: blink 0.75s step-end infinite;
+          }
+        }
+      }
+    }
+
+    .headline--content {
+      @include not-desktop {
+        order: 2;
+      }
+
+      p {
+        font-size: $font-sm;
+        margin-top: $spacing-md;
+
+        @include tablet {
+          font-size: $font-md;
+        }
+      }
+    }
+  }
+
+  aside {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+
+    @include not-desktop {
+      order: 3;
+      padding-top: 0;
+      overflow-x: scroll;
+      padding: $spacing-sm;
+      margin: 0 -$spacing-sm;
+      margin-top: $spacing-sm;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+
+    @include desktop {
+      margin-left: $spacing-md;
+    }
+
+    article {
+      width: 18rem;
+      padding-left: 1rem;
+      position: relative;
+      padding-bottom: 1rem;
+
+      img {
+        width: 2.4rem;
+        height: 2.4rem;
+        margin-bottom: $spacing-xs;
+      }
+
+      span {
+        font-size: $font-sm;
+        display: contents;
+        font-weight: bold;
+      }
+
+      strong {
+        display: contents;
+      }
+
+      &::before {
+        top: 1rem;
+        left: 0rem;
+        z-index: 10;
+        content: "";
+        display: block;
+        position: absolute;
+        border-radius: 2rem;
+        width: calc(100% - 1rem);
+        height: calc(100% - 1rem);
+      }
+
+      :global {
+        .card--container {
+          display: flex;
+          font-weight: bold;
+          font-size: $font-xs;
+          border-radius: 2rem;
+          padding: $spacing-sm;
+          flex-direction: column;
+          position: relative;
+          z-index: 15;
+        }
+      }
+    }
+
+    :global {
+      .strengths--left-col {
+        margin-right: $spacing-md;
+
+        @include desktop {
+          margin-bottom: -1rem;
+        }
+      }
+
+      .strengths--right-col {
+        @include desktop {
+          margin-top: -8rem;
+          position: relative;
+          align-self: flex-start;
+        }
+      }
+
+      .strengths--left-col,
+      .strengths--right-col {
+        @include not-desktop {
+          display: flex;
+          flex-direction: row;
+
+          article {
+            margin-right: $spacing-sm;
+
+            &:last-child {
+              margin-right: 0;
+            }
+
+            &:first-child {
+              margin-right: $spacing-md;
+            }
+          }
+        }
+
+        @include desktop {
+          article {
+            margin-bottom: $spacing-sm;
+
+            &:last-child {
+              margin-bottom: 0;
+            }
+
+            &:first-child {
+              margin-bottom: $spacing-md;
+            }
+          }
+        }
+      }
+
+      article.black-green {
+        &::before {
+          background: transparent;
+          border: 1px solid $black;
+        }
+
+        :global {
+          .card--container {
+            background: $black;
+            color: $white;
+
+            span {
+              color: $green;
+            }
+          }
+        }
+      }
+
+      article.yellow {
+        &::before {
+          background: $black;
+          border: 1px solid $black;
+        }
+
+        :global {
+          .card--container {
+            background: $yellow;
+            color: $dark-yellow;
+
+            span {
+              color: $black;
+            }
+          }
+        }
+      }
+
+      article.green {
+        &::before {
+          background: $black;
+          border: 1px solid $black;
+        }
+
+        :global {
+          .card--container {
+            background: $green;
+            color: $dark-green;
+
+            span {
+              color: $black;
+            }
+          }
+        }
+      }
+
+      article.black-yellow {
+        &::before {
+          background: transparent;
+          border: 1px solid $black;
+        }
+
+        :global {
+          .card--container {
+            background: $black;
+            color: $white;
+
+            span {
+              color: $yellow;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    @include not-desktop {
+      order: 1;
+    }
+
+    @include desktop {
+      flex-direction: column;
+    }
+
+    h1 {
+      font-size: $font-sm;
+      font-weight: normal;
+      margin-bottom: $spacing-sm;
+
+      @include tablet {
+        font-size: $font-md;
+      }
+    }
+
+    button {
+      height: auto;
+      display: flow-root;
+      font-weight: bold;
+      font-size: $font-xs;
+      padding: 1.3rem 2rem;
+
+      @include desktop {
+        font-size: $font-sm;
+      }
+    }
+  }
+}
+
+@keyframes blink {
+  from,
+  to {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}

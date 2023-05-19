@@ -1,0 +1,137 @@
+@import "tokens";
+@import "mixins";
+
+* {
+  box-sizing: border-box;
+  word-break: break-word;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body.scroll-blocked {
+  overflow: hidden;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-title {
+  font-weight: bold;
+  font-size: $font-xl;
+
+  @include desktop {
+    font-size: $font-xxl;
+  }
+}
+
+.section-subtitle {
+  color: $gray;
+  font-size: $font-sm;
+  font-weight: normal;
+
+  @include desktop {
+    font-size: $font-md;
+  }
+}
+
+.section-cover {
+  width: 100%;
+  height: 15rem;
+  display: block;
+  overflow: hidden;
+  position: relative;
+  border-radius: 2rem;
+
+  &::before {
+    z-index: 1;
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+  }
+
+  @include tablet {
+    height: 20rem;
+  }
+
+  @include desktop {
+    height: 30rem;
+  }
+
+  img {
+    border-radius: 2rem;
+  }
+}
+
+.section-divider {
+  border: 0;
+  height: 2px;
+  width: 10rem;
+  opacity: 0.8;
+  background: $black;
+  align-self: center;
+  justify-self: center;
+  margin: $spacing-md 0;
+
+  @include desktop {
+    margin: $spacing-lg 0;
+  }
+}
+
+p,
+.regular-text {
+  @include regular-text;
+}
+
+// react-toastify overrides:
+.Toastify__toast-body {
+  align-items: flex-start !important;
+}
+
+div.contact-form--error-alert-content {
+  display: flex;
+  flex-direction: column;
+  font-size: $font-xs;
+
+  span {
+    font-size: $font-xs;
+    font-weight: bold;
+  }
+
+  p {
+    font-size: $font-xs;
+    font-weight: normal;
+  }
+
+  ul {
+    margin-top: $spacing-sm;
+    list-style-position: inside;
+
+    li {
+      width: 240px;
+      overflow: hidden;
+      white-space: nowrap;
+      margin-bottom: 0.3rem;
+      text-overflow: ellipsis;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.react-player {
+  video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}

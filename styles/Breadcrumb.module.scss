@@ -1,0 +1,32 @@
+@import "tokens";
+@import "mixins";
+
+.breadcrumb {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+
+  li {
+    color: $gray;
+    font-size: $font-xxs;
+
+    @include tablet {
+      font-size: $font-xs;
+    }
+
+    a {
+      color: $gray;
+      text-decoration: none;
+    }
+
+    &:not(:last-child) {
+      font-weight: bold;
+
+      &::after {
+        display: inline-block;
+        margin: 0 $spacing-xs;
+        content: "›";
+      }
+    }
+  }
+}

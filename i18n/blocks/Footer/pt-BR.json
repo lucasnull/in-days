@@ -1,0 +1,18 @@
+{
+  "title": "Sobre Simbiose Ventures e in<span>days</span>.app",
+  "paragraphs": [
+    "Uma empresa singular de outsourcing, que forma desenvolvedores com alto padrão técnico e ético. Estamos inseridos no mercado de tecnologia desde 2012 e já atendemos mais de 80 empresas nacionais e internacionais.",
+    "A <b>indays.app</b> é formado por um grupo de desenvolvedores de alta performance participantes da Simbiose Ventures com um foco especial em resolução de problemas através da transformação e inovação digital."
+  ],
+  "menus": {
+    "about": "Saiba mais sobre quem somos",
+    "mission": "Nossa missão, premissas e valores",
+    "dream": "Nosso sonho"
+  },
+  "socialMediaLinks": {
+    "alts": {
+      "github": "Ícone do Github",
+      "linkedin": "Ícone do Linkedin"
+    }
+  }
+}

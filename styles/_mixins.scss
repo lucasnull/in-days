@@ -1,0 +1,53 @@
+@mixin desktop() {
+  @media (min-width: 850px) {
+    @content;
+  }
+}
+
+@mixin not-desktop() {
+  @media (max-width: 849px) {
+    @content;
+  }
+}
+
+@mixin tablet() {
+  @media (min-width: 430px) {
+    @content;
+  }
+}
+
+@mixin flex-centered-content {
+  display: flex;
+  align-items: center;
+  padding: $spacing-sm;
+  justify-content: center;
+
+  @include tablet {
+    padding: $spacing-md $spacing-sm;
+  }
+
+  @include desktop {
+    padding: $spacing-md;
+  }
+}
+
+@mixin simple-link {
+  border: 0;
+  cursor: pointer;
+  text-align: left;
+  font-weight: bold;
+  background: transparent;
+  text-decoration: underline;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+@mixin regular-text {
+  font-size: $font-sm;
+
+  @include tablet {
+    font-size: $font-md;
+  }
+}

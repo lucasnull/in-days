@@ -1,0 +1,280 @@
+@import "tokens";
+@import "mixins";
+
+.howWeWork {
+  @include flex-centered-content;
+
+  :global {
+    .howWeWork--content-container {
+      width: 100%;
+      max-width: $max-width;
+      display: flex;
+      flex-direction: column;
+
+      p {
+        margin-top: $spacing-sm;
+      }
+    }
+
+    .howWeWork--timeline {
+      display: block;
+      margin-top: $spacing-md;
+      padding-bottom: $spacing-sm;
+
+      ol {
+        list-style-type: none;
+
+        li {
+          display: flex;
+          max-width: 540px;
+          flex-direction: row;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+
+          h3 {
+            font-size: $font-xs;
+          }
+
+          p {
+            margin: 0;
+            font-size: $font-xs;
+          }
+
+          @include tablet {
+            h3 {
+              font-size: $font-sm;
+            }
+
+            p {
+              font-size: $font-sm;
+            }
+          }
+
+          .timeline--item--visual-guide {
+            height: auto;
+            width: 1.4rem;
+            display: flex;
+            position: relative;
+            align-items: center;
+            flex-direction: column;
+            margin-right: $spacing-sm;
+
+            .timeline--item--visual-guide--circle {
+              top: 0.35rem;
+              z-index: 11;
+              width: 1.4rem;
+              height: 1.4rem;
+              display: block;
+              position: absolute;
+              border-radius: 1.4rem;
+
+              @include tablet {
+                top: 0.5rem;
+              }
+            }
+
+            .timeline--item--visual-guide--connector {
+              top: 0.5rem;
+              z-index: 10;
+              height: 100%;
+              width: 0.6rem;
+              display: block;
+              position: absolute;
+
+              @include tablet {
+                top: 1rem;
+              }
+            }
+          }
+
+          .timeline--item--content {
+            flex: 1;
+            margin-bottom: $spacing-md;
+          }
+        }
+      }
+
+      &.green {
+        ol {
+          li:nth-child(1) {
+            .timeline--item--visual-guide--circle {
+              border: 0.1rem dashed $green;
+              background: $white;
+            }
+
+            .timeline--item--visual-guide--connector {
+              border: 0.1rem dashed $green;
+            }
+          }
+
+          li:nth-child(2) {
+            .timeline--item--visual-guide--circle {
+              border: 0.1rem solid $green;
+              background: $white;
+            }
+
+            .timeline--item--visual-guide--connector {
+              border: 0.1rem solid $green;
+            }
+          }
+
+          li:nth-child(3) {
+            .timeline--item--visual-guide--circle {
+              border: 0.1rem solid $green;
+              background: #ccffea;
+            }
+
+            .timeline--item--visual-guide--connector {
+              border: 0.1rem solid $green;
+              background: #ccffea;
+            }
+          }
+
+          li:nth-child(4) {
+            .timeline--item--visual-guide--circle {
+              border: 0.1rem solid $green;
+              background: $green;
+            }
+
+            .timeline--item--visual-guide--connector {
+              display: none;
+            }
+          }
+        }
+      }
+
+      &.orange {
+        ol {
+          li:nth-child(1) {
+            .timeline--item--visual-guide--circle {
+              border: 0.1rem dashed $purple;
+              background: $white;
+            }
+
+            .timeline--item--visual-guide--connector {
+              border: 0.1rem dashed $purple;
+            }
+          }
+
+          li:nth-child(2) {
+            .timeline--item--visual-guide--circle {
+              border: 0.1rem solid $purple;
+              background: $white;
+            }
+
+            .timeline--item--visual-guide--connector {
+              border: 0.1rem solid $purple;
+            }
+          }
+
+          li:nth-child(3) {
+            .timeline--item--visual-guide--circle {
+              border: 0.1rem solid $purple;
+              background: #ccbaf7;
+            }
+
+            .timeline--item--visual-guide--connector {
+              border: 0.1rem solid $purple;
+              background: #ccbaf7;
+            }
+          }
+
+          li:nth-child(4) {
+            .timeline--item--visual-guide--circle {
+              border: 0.1rem solid $purple;
+              background: $purple;
+            }
+
+            .timeline--item--visual-guide--connector {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+
+    .howWeWork--squad-figure {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      margin-top: $spacing-md;
+      padding-bottom: $spacing-sm;
+
+      ol {
+        display: grid;
+        list-style-type: none;
+        grid-template-rows: auto;
+        grid-row-gap: $spacing-sm;
+        margin-bottom: $spacing-sm;
+        grid-column-gap: $spacing-sm;
+        grid-template-columns: repeat(2, 8rem);
+
+        @include tablet {
+          grid-template-columns: repeat(4, 8rem);
+        }
+
+        li {
+          color: $gray;
+          display: flex;
+          text-align: center;
+          font-size: $font-xxs;
+          flex-direction: column;
+
+          > span {
+            width: 8rem;
+            height: 8rem;
+            display: flex;
+            position: relative;
+            border-radius: 8rem;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: $spacing-xs;
+            border: 1px solid $light-gray;
+
+            span[itemProp="count"] {
+              bottom: 0;
+              right: 0.5rem;
+              color: $white;
+              display: flex;
+              width: 1.8rem;
+              height: 1.8rem;
+              font-size: 1rem;
+              position: absolute;
+              background: $black;
+              align-items: center;
+              border-radius: 1.8rem;
+              justify-content: center;
+            }
+          }
+        }
+      }
+
+      figcaption {
+        font-size: $font-xxs;
+      }
+    }
+  }
+
+  figure {
+    margin-top: $spacing-xs;
+
+    @include tablet {
+      margin-top: $spacing-sm;
+    }
+
+    @include desktop {
+      margin-top: $spacing-md;
+    }
+  }
+
+  footer {
+    a {
+      @include regular-text;
+      @include simple-link;
+      color: $black;
+    }
+  }
+}

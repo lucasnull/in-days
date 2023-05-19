@@ -1,0 +1,44 @@
+{
+  "page": {
+    "key": "Página inicial",
+    "title": "Digital Transformation Consulting | indays.app",
+    "description": "We are a consulting company with a special focus into digital transformation and inovation that helps you to develop business strategies and digitalization",
+    "keywords": "digital inovation, digital transformation, consulting"
+  },
+  "general": {
+    "needHelp": "Need help?"
+  },
+  "blocks": {
+    "headline": {
+      "title": "We are a consultancy focused on innovation and digital transformation that helps you develop <strong><u>business and digitalization strategies</u></strong>.",
+      "action": "I need",
+      "words": ["growth", "inovation", "transformation", "to profit", "digitalization"],
+      "cards": {
+        "first": "<span><strong>optimize</strong></span> your most important processes",
+        "second": "<span>improve your</span> customer experience",
+        "third": "<span>increase your profits</span> up to 10 times",
+        "fourth": "<span>speed up</span> your business growth"
+      }
+    },
+    "customers": {
+      "title": "Do you believe that <strong><u>technology</u></strong> can leverage your company?",
+      "subtitle": "indays.app is formed by Simbiose Ventures' developers that focuses on problem solutions with technology. Simbiose Ventures already helped these companies:"
+    },
+    "appeal": {
+      "title": "Consulting",
+      "description": "Everyone believes that digital transformation is important for future success, but only <u>4% of companies are prepared</u> to implement the necessary actions and <b>obtain 3 to 10 times more profit</b> because they don't even see the gaps and problems related to technology, or lack thereof, within their own business. <br /><br /> We are a company with expertise in technology consulting, where we develop business strategies and digital innovation with an emphasis on customized solutions.<br /><br /> We are ready to map your company's operations so that it is digitally innovated in the best possible way, being directed to gain exponential profitability.",
+      "action": "I need consulting"
+    },
+    "solutions": {
+      "title": "Solutions",
+      "subtitle": "We are a technology and innovation ecosystem that integrates human knowledge, strategic vision and flexibility to enhance the future of companies.",
+      "items": [
+        { "label": "Digital strategy consulting", "icon": "computer" },
+        { "label": "Diagnosis of technology and its challenges", "icon": "file" },
+        { "label": "Definition of tools and platforms", "icon": "wrench" },
+        { "label": "Defining omnichannel opportunities", "icon": "arrows" },
+        { "label": "Optimization of important processes", "icon": "fast-forward" }
+      ]
+    }
+  }
+}

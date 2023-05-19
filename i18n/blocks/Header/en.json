@@ -1,0 +1,10 @@
+{
+  "menu": {
+    "howWeWork": "How we work",
+    "blog": "Blog",
+    "contact": "Contact us"
+  },
+  "general": {
+    "hamburger-icon": "Expand main menu"
+  }
+}
